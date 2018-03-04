@@ -1,0 +1,9 @@
+<%
+  var absolutePath = filename.split(site.developDir)[filename.split(site.developDir).length -1].replace('.ejs','.html');
+var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
+%>
+
+<header>
+  <a href="<%=relativePath%>">top</a>
+  <a href="<%=relativePath%>about">about</a>
+</header>

@@ -1,0 +1,30 @@
+<%include('ejs/_data'); var meta = getData();%>
+<%
+var absolutePath = filename.split(site.developDir)[filename.split(site.developDir).length -1].replace('.ejs','.html');
+var relativePath = '../'.repeat([absolutePath.split('/').length -1]);
+%>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title><%=meta.title %> </title>
+  <!-- <script src="http://dev2.tmma-dev.ranaextractive.jp/wp-includes/js/wp-emoji-release.min.js?ver=4.9.3" type="text/javascript" defer=""></script> -->
+  <meta name="description" content="<%=meta.desc%>"/>
+  <meta name="keywords" content="<%=meta.key%>">
+  <!-- <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script> -->
+  <script src="<%=relativePath%>js/vender/lib.js"></script>
+  <script src='<%=relativePath%>js/characterHeight.js'></script>
+  <link rel="stylesheet" href="<%=relativePath%>css/normalize.css">
+  <link rel="stylesheet" href="<%=relativePath%>css/top.css">
+</head>
+<body>
+  <div>
+    <h1 class="mozi3 mozi">僕は耳と目を閉じ、口をつぐんだ人間になろうと考えた.<br/>I thought what I'd do was,<br/> I'd pretend I was one of those deaf-mutes</h1>
+    <p class="mozi2 mozi">僕は耳と目を閉じ、口をつぐんだ人間になろうと考えた<br/>
+    I thought what I'd do was, I'd pretend I was one of those deaf-mutes</p>
+  </div>
+</body>
+</html>

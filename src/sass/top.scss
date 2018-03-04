@@ -1,0 +1,48 @@
+@mixin marginBottom($baseMargin: 20px, $pFontSize: 1.5rem, $pLineHeight: 1.8) {
+    margin-bottom: calc(#{$baseMargin} - (((#{$pFontSize} * #{$pLineHeight}) - #{$pFontSize}) / 2));
+}
+
+
+.mozimozi{
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.mozimozimozi{
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.mozi{
+  position: relative;
+  box-sizing: content-box;
+  display: block;
+}
+
+h1{
+  line-height: 1.8;
+}
+
+html{
+  font-size: 15px;
+}
+.mb40{
+  margin-bottom: 40px;
+}
+
+div{
+  padding: 70px 70px;
+  width: 720px;
+  border: 1px solid #000;
+}
+
+.mozi2{
+  font-size: 1rem;
+  line-height: 1.8;
+
+}
+.mozi3{
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
